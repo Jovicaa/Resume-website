@@ -1,0 +1,16 @@
+
+.contact__section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact__h3{
+    color: var(--clr-slate600);
+    font-size: var(--size-lg);
+}
+
+.contact__paragraph{
+    display: inline-block;
+    min-width: 50px;
+}
