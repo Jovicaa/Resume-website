@@ -1,4 +1,9 @@
 
+.contact__container{
+    margin-top: 5rem;
+
+}
+
 .contact__info{
     margin-top: 3rem;
 }
@@ -14,8 +19,9 @@
     font-size: var(--size-lg);
 }
 
-
-
+.contact__container__links{
+    padding-bottom: 3rem;
+}
 
 .contact__paragraph{
     display: inline-block;
@@ -23,52 +29,35 @@
 }
 
 .contact__icon{
-     width: 35px;
+    width: 35px;
     height: 35px;
+    display: inline-block;
 }
+
 .contact__icon__phone{
+    
     width: 40px;
     height: 40px;
 }
 
-.kvadrat{
-    position:relative;
-    height: 160px;
-    width: 160px;
-    /* background-color: rgb(18, 25, 31); */
-    border-radius: 50%;
-}
-.prvi{
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    left: 70px;
-
-}
-.drugi{
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 70px;
-}
-.treci{
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 140px;
-    left: 70px;
-}
-.cetvrti{
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    top: 70px;
-    left: 140px;
+.contact__data {
+    margin-left: 1rem;
+    color: var(--clr-slate600);
 }
 
 .contact__sm-profile{
-    left: 1rem;
     display: inline-block;
+    margin-left: 0.625rem;
+    margin-right: 0.2rem;
+}
+
+.contact__paragraph__altcontact{
+    color: var(--clr-slate400);
+    font-size: var(--size-lg);
+}
+
+.contact__container__rights {
+    padding-top: 5rem;
 }
 
 .footer__rights{
@@ -78,13 +67,14 @@
 
 
 
+
 @media (min-width: 475px) {
     .footer__section__right{
-        padding-top: 3rem;
+        margin-top: 3rem;
     }
 }
 @media (min-width: 640px){
     .footer__section__right{
-        padding-top: 0;
+        margin-top: 2rem;
     }
 }
