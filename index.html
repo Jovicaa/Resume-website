@@ -22,14 +22,24 @@
     <link rel="stylesheet" href="styles/components/featured.css">
     <link rel="stylesheet" href="styles/components/contact.css">
     <link rel="stylesheet" href="styles/components/work.css">
+    <link rel="stylesheet" href="styles/components/scroll.css">
 
     <link rel="stylesheet" href="styles/util.css">
-    
+
+    <script src="index.js" defer ></script>
 
   </head>
 
   <body>
 
+    <!-- BACK TO TOP -->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img class="scroll__image" src="public/scroll-up.png" alt="">
+    </button>
+
+
+    <!-- HEADER SECTION -->
     
     <header class="header container">
         <nav>
@@ -45,7 +55,7 @@
                 </li>
                 <li class="header__line"></li>
                 <li>
-                    <button class="header__sun">
+                    <button class="header__sun dark-mode-toggle" id="dark-mode-toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                           </svg>
@@ -56,12 +66,27 @@
                     <a class="header__resume btn" href="https://jovicaa.github.io/Resume.pdf/">Resume</a>
                 </li>
             </ul>
-            <button class="header__bars__down"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
-              </svg>
-              </button>
+
+            <!-- COLLAPS BARS -->
+
+            <button class="header__bars__down" id="header__bars__down" type="button" onclick="collapsFunction()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+                </svg>
+            </button>
+
         </nav>
+
     </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu"></ul>
+        </nav>
+    </div>
+
+    <!-- End of mobile navigation -->
 
 
      <main>
@@ -75,7 +100,7 @@
             <p class="hero__description">A passionate <strong>Frontend</strong> web developer and UI/UX enthusiast 
                 specializing in building stunning <strong>pixel-perfect</strong> 
                 interactive websites.</p>
-            <a class="hero__btn btn" href="#">Reach out</a>
+            <a class="hero__btn btn" href="#contact">Reach out</a>
         </section>
 
         <!-- ABOUT ME SECTION -->
@@ -160,6 +185,8 @@
 
             </div>
 
+            <hr class="work__hr">
+
                             <!-- second work case -->
 
             <div class="work__section row section">
@@ -186,8 +213,10 @@
                 </div>
             </div>
 
-                            <!-- third work case -->
+            <hr class="work__hr">
 
+                            <!-- third work case -->
+            
             <div class="work__section row section">
                 <div class="work__left-section col-lg-6 col-md-6">
                     <div class="work__left-section-container">
@@ -210,6 +239,8 @@
                     <img class="work__image__snakes work__image" src="Public/snakes.png" alt="">
                 </div>
             </div>
+
+            <hr class="work__hr">
 
         </section>
 
@@ -264,11 +295,13 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="dark-mode.js"></script>
 </body>
+
 </html>
