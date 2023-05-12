@@ -31,6 +31,17 @@
     
 }
 
+.dark-mode {
+    --clr-dark : #f1f5f9;
+    --clr-light: #070a13;
+    --clr-slate400:#1e293b;
+    --clr-slate600:#475569;
+    --clr-slate800:#94a3b8;
+}
+
+
+
+
 *{
     margin: 0;
     line-height: calc(1em + 0.5rem);
@@ -73,6 +84,3 @@ a{
 strong{
     color: var(--clr-indigo);
 }
-
-/* SCROLL BAR */
-
