@@ -58,13 +58,13 @@
 
 .work__image__tindog{
     border-radius: 45%;
-    opacity: 70%;
+    /* opacity: 70%; */
     margin-top: 20px;
 }
 
 .work__image__snakes{
     border-radius: 50%;
-    opacity: 70%;
+    /* opacity: 70%; */
     margin-top: 20px;
     height: 12rem;
 }
@@ -75,11 +75,13 @@
     width: 9rem;
 }
 
+.work__hr{
+    border: var(--clr-slate600) solid 1px;
+}
 
 
 
-
-
+/* QUERY */
 
 /*  xs  */
 @media (min-width: 475px) {
